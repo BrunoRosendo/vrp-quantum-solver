@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vrp-quantum-solver"
+version = "0.0.1"
+authors = [
+  { name="Bruno Rosendo", email="brunomrosendo@hotmail.com" },
+]
+description = "Package to solve vehicle routing problems using quantum optimization algorithms"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/BrunoRosendo/vrp-quantum-solver"
+Issues = "https://github.com/BrunoRosendo/vrp-quantum-solver/issues"
+Dissertation = "https://hdl.handle.net/10216/160532"

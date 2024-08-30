@@ -1,0 +1,42 @@
+# This code is part of a Qiskit project.
+#
+# (C) Copyright IBM 2021, 2023.
+#
+# This code is licensed under the Apache License, Version 2.0. You may
+# obtain a copy of this license in the LICENSE.txt file in the root directory
+# of this source tree or at http://www.apache.org/licenses/LICENSE-2.0.
+#
+# Any modifications or derivative works of this code must retain this
+# copyright notice, and modified files need to carry a notice indicating
+# that they have been altered from the originals.
+
+name: Deploy Code
+
+on:
+  push:
+    tags:
+      - '*'
+
+jobs:
+  code_publish:
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      id-token: write
+    strategy:
+      matrix:
+        python-version: [3.8]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install deps
+        run: pip install -U pip setuptools virtualenv wheel
+      - name: Build sdist
+        run: python3 setup.py sdist bdist_wheel
+      - uses: actions/upload-artifact@v4
+        with:
+          path: ./dist/*
+      - name: Deploy to Pypi
+        uses: pypa/gh-action-pypi-publish@release/v1
