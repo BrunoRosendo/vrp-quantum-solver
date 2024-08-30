@@ -6,7 +6,7 @@ from pathlib import Path
 
 import plotly.graph_objects as go
 
-from src.model.VRP import VRP, DistanceUnit
+from vrp_quantum_solver.model.VRP import VRP, DistanceUnit
 
 
 class VRPSolution:

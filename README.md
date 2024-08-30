@@ -13,8 +13,8 @@ To use the solvers, you must choose your preferred model (CVRP or RPP) and solve
 An example of a simple CVRP problem with the D-Wave solver is shown below:
 
 ```python
-from src.model.dispatcher import CVRP
-from src.solver.qubo.DWaveSolver import DWaveSolver
+from vrp_quantum_solver.model.dispatcher import CVRP
+from vrp_quantum_solver.solver.qubo.DWaveSolver import DWaveSolver
 
 # Define the problem parameters
 model = CVRP(1, [(46, 32), (20, 32), (71, 32), (46, 60), (46, 4)], 5, [1] * 5)
@@ -33,7 +33,7 @@ solution.display()
 
 Currently, the project supports four routing problem variations: Vehicle Routing Problem (VRP), Capacitated VRP (CVRP), Multi-Capacitated VRP (MCVRP) and Ride Pooling Problem (RPP). You can find details about each problem in the [thesis document](https://repositorio-aberto.up.pt/handle/10216/160532).
 
-The model be chosen by using one of two dispatcher functions: `CVRP` or `RPP`, depending on which problem you're trying to solve. The functions reside in `src/model/dispatcher.py`. The right variation will be used depending on the parameters you set.
+The model be chosen by using one of two dispatcher functions: `CVRP` or `RPP`, depending on which problem you're trying to solve. The functions reside in `model/dispatcher.py`. The right variation will be used depending on the parameters you set.
 
 These functions use a set of parameters that will define the routing problem at hand. These parameters are in the table:
 
@@ -112,7 +112,7 @@ This solver does not require any authentication, as it is a local solver. It has
 A cost function generates a distance matrix from the locations list. The default cost function is the Manhattan distance, but you can define your own cost function by creating a function that takes a list of coordinates and returns the matrix. For example:
 
 ```python
-from src.model.VRP import DistanceUnit
+from vrp_quantum_solver.model.VRP import DistanceUnit
 
 def manhattan_distance(
     locations: list[tuple[int, int]], unit: DistanceUnit = DistanceUnit.METERS
@@ -150,10 +150,6 @@ If you want to contribute to this project, follow the instructions below to set 
 - [Python 3.10+](https://www.python.org/)
 - [pip3](https://pypi.org/project/pip/)
 - All the dependencies listed in the `requirements.txt` file, installed via pip
-
-### Running
-
-The entry point for the application is usually the `src/main.py` file. You can also use other scripts under `src/scripts/` or create your own. To run them, execute Python with the desired script.
 
 ### Code Formatting
 

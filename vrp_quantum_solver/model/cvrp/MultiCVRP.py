@@ -2,9 +2,9 @@ from typing import Callable
 
 from docplex.mp.linear import LinearExpr
 
-from src.model.StepVRP import StepVRP
-from src.model.VRP import DistanceUnit
-from src.solver.cost_functions import manhattan_distance
+from vrp_quantum_solver.model.StepVRP import StepVRP
+from vrp_quantum_solver.model.VRP import DistanceUnit
+from vrp_quantum_solver.solver.cost_functions import manhattan_distance
 
 
 class MultiCVRP(StepVRP):

@@ -5,8 +5,8 @@ from docplex.mp.dvar import Var
 from docplex.mp.linear import LinearExpr, ConstantExpr
 from docplex.mp.quad import QuadExpr
 
-from src.model.VRP import VRP
-from src.model.adapter.Adapter import Adapter
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.adapter.Adapter import Adapter
 
 
 class DWaveAdapter(Adapter):

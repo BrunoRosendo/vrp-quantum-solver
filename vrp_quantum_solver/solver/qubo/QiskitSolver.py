@@ -26,11 +26,11 @@ from qiskit_optimization.converters import (
     LinearEqualityToPenalty,
 )
 
-from src.model.VRP import VRP
-from src.model.VRPSolution import VRPSolution
-from src.model.adapter.QiskitAdapter import QiskitAdapter
-from src.qiskit_algorithms.qiskit_algorithms import QAOA
-from src.solver.qubo.QuboSolver import QuboSolver
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.VRPSolution import VRPSolution
+from vrp_quantum_solver.model.adapter.QiskitAdapter import QiskitAdapter
+from vrp_quantum_solver.qiskit_algorithms.qiskit_algorithms import QAOA
+from vrp_quantum_solver.solver.qubo.QuboSolver import QuboSolver
 
 DEFAULT_SAMPLER = Sampler()
 DEFAULT_CLASSICAL_OPTIMIZER = COBYLA()

@@ -1,8 +1,8 @@
 from qiskit_optimization import QuadraticProgram
 from qiskit_optimization.translators import from_docplex_mp
 
-from src.model.VRP import VRP
-from src.model.adapter.Adapter import Adapter
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.adapter.Adapter import Adapter
 
 
 class QiskitAdapter(Adapter):

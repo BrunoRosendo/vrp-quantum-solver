@@ -12,10 +12,10 @@ from dimod import (
 from dimod.constrained.constrained import CQMToBQMInverter
 from dwave.system import EmbeddingComposite
 
-from src.model.VRP import VRP
-from src.model.VRPSolution import VRPSolution
-from src.model.adapter.DWaveAdapter import DWaveAdapter
-from src.solver.qubo.QuboSolver import QuboSolver
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.VRPSolution import VRPSolution
+from vrp_quantum_solver.model.adapter.DWaveAdapter import DWaveAdapter
+from vrp_quantum_solver.solver.qubo.QuboSolver import QuboSolver
 
 DEFAULT_SAMPLER = ExactCQMSolver()
 DEFAULT_EMBEDDING = EmbeddingComposite

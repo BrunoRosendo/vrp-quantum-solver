@@ -3,7 +3,7 @@ import math
 import os
 import urllib.request
 
-from src.model.VRP import DistanceUnit
+from vrp_quantum_solver.model.VRP import DistanceUnit
 
 
 def manhattan_distance(

@@ -1,7 +1,7 @@
 from abc import ABC
 
-from src.model.VRPSolution import VRPSolution
-from src.solver.VRPSolver import VRPSolver
+from vrp_quantum_solver.model.VRPSolution import VRPSolution
+from vrp_quantum_solver.solver.VRPSolver import VRPSolver
 
 
 class QuboSolver(VRPSolver, ABC):

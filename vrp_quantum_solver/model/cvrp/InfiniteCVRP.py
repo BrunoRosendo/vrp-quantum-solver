@@ -3,7 +3,7 @@ from typing import Callable
 from docplex.mp.dvar import Var
 from docplex.mp.linear import LinearExpr
 
-from src.model.VRP import VRP, DistanceUnit
+from vrp_quantum_solver.model.VRP import VRP, DistanceUnit
 
 
 class InfiniteCVRP(VRP):

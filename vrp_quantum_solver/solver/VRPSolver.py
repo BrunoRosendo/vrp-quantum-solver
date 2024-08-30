@@ -2,8 +2,8 @@ import time
 from abc import ABC, abstractmethod
 from typing import Callable, Any
 
-from src.model.VRP import VRP
-from src.model.VRPSolution import VRPSolution
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.VRPSolution import VRPSolution
 
 
 class VRPSolver(ABC):

@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from src.model.VRP import VRP
+from vrp_quantum_solver.model.VRP import VRP
 
 
 class Adapter(ABC):

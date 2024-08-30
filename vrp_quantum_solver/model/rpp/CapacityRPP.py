@@ -1,8 +1,8 @@
 from typing import Callable
 
-from src.model.VRP import DistanceUnit
-from src.model.rpp.InfiniteRPP import InfiniteRPP
-from src.solver.cost_functions import manhattan_distance
+from vrp_quantum_solver.model.VRP import DistanceUnit
+from vrp_quantum_solver.model.rpp.InfiniteRPP import InfiniteRPP
+from vrp_quantum_solver.solver.cost_functions import manhattan_distance
 
 
 class CapacityRPP(InfiniteRPP):

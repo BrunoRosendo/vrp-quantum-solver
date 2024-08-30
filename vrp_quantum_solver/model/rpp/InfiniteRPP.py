@@ -1,8 +1,8 @@
 from typing import Callable
 
-from src.model.StepVRP import StepVRP
-from src.model.VRP import DistanceUnit
-from src.solver.cost_functions import manhattan_distance
+from vrp_quantum_solver.model.StepVRP import StepVRP
+from vrp_quantum_solver.model.VRP import DistanceUnit
+from vrp_quantum_solver.solver.cost_functions import manhattan_distance
 
 
 class InfiniteRPP(StepVRP):

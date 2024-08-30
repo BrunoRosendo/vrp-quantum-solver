@@ -1,7 +1,7 @@
 from typing import Callable
 
-from src.model.VRP import DistanceUnit
-from src.model.cvrp.InfiniteCVRP import InfiniteCVRP
+from vrp_quantum_solver.model.VRP import DistanceUnit
+from vrp_quantum_solver.model.cvrp.InfiniteCVRP import InfiniteCVRP
 
 
 class ConstantCVRP(InfiniteCVRP):

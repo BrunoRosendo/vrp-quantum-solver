@@ -1,12 +1,12 @@
 from typing import Callable
 
-from src.model.VRP import DistanceUnit, VRP
-from src.model.cvrp.ConstantCVRP import ConstantCVRP
-from src.model.cvrp.InfiniteCVRP import InfiniteCVRP
-from src.model.cvrp.MultiCVRP import MultiCVRP
-from src.model.rpp.CapacityRPP import CapacityRPP
-from src.model.rpp.InfiniteRPP import InfiniteRPP
-from src.solver.cost_functions import manhattan_distance
+from vrp_quantum_solver.model.VRP import DistanceUnit, VRP
+from vrp_quantum_solver.model.cvrp.ConstantCVRP import ConstantCVRP
+from vrp_quantum_solver.model.cvrp.InfiniteCVRP import InfiniteCVRP
+from vrp_quantum_solver.model.cvrp.MultiCVRP import MultiCVRP
+from vrp_quantum_solver.model.rpp.CapacityRPP import CapacityRPP
+from vrp_quantum_solver.model.rpp.InfiniteRPP import InfiniteRPP
+from vrp_quantum_solver.solver.cost_functions import manhattan_distance
 
 
 def CVRP(

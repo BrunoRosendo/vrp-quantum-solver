@@ -3,10 +3,10 @@ from typing import Any
 from ortools.constraint_solver import pywrapcp
 from ortools.constraint_solver import routing_enums_pb2
 
-from src.model.VRP import VRP
-from src.model.VRPSolution import VRPSolution
-from src.model.rpp.InfiniteRPP import InfiniteRPP
-from src.solver.VRPSolver import VRPSolver
+from vrp_quantum_solver.model.VRP import VRP
+from vrp_quantum_solver.model.VRPSolution import VRPSolution
+from vrp_quantum_solver.model.rpp.InfiniteRPP import InfiniteRPP
+from vrp_quantum_solver.solver.VRPSolver import VRPSolver
 
 DEFAULT_SOLUTION_STRATEGY = routing_enums_pb2.FirstSolutionStrategy.AUTOMATIC
 DEFAULT_LOCAL_SEARCH_METAHEURISTIC = (
