@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "vrp-quantum-solver"
-version = "0.0.1"
+version = "1.0.0"
 authors = [
   { name="Bruno Rosendo", email="brunomrosendo@hotmail.com" },
 ]
@@ -20,4 +20,4 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/BrunoRosendo/vrp-quantum-solver"
 Issues = "https://github.com/BrunoRosendo/vrp-quantum-solver/issues"
-Dissertation = "https://hdl.handle.net/10216/160532"
+Thesis = "https://hdl.handle.net/10216/160532"
