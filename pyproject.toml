@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "vrp-quantum-solver"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Bruno Rosendo", email="brunomrosendo@hotmail.com" },
 ]
@@ -16,6 +16,11 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
 
 [project.urls]
 Homepage = "https://github.com/BrunoRosendo/vrp-quantum-solver"
